@@ -1,4 +1,4 @@
-Hosted On [Github](https://umair-ali-bhutto.github.io/portfolio/)
+Hosted On: [Github](https://umair-ali-bhutto.github.io/portfolio/){:target="_blank"}
 # Hello, I'm [Umair Ali Bhutto]
 
 Welcome to my portfolio repository! This is where I showcase my work and provide information about my skills, experiences, and projects.

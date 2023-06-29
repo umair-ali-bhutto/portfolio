@@ -41,6 +41,20 @@ function PageTransitions() {
   themeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
+    
+    
+    let faviconDark = "assets/images/favicon-dark.ico";
+    let faviconLight = "assets/images/favicon-light.ico";
+    
+    let favicon = document.getElementById('favicon').href;
+
+    if(favicon.includes(faviconDark)){
+    document.getElementById('favicon').href = favicon.replace(faviconDark,faviconLight);
+    }
+    else{
+    document.getElementById('favicon').href = favicon.replace(faviconLight,faviconDark);
+    }
+
   });
 }
 
@@ -69,6 +83,17 @@ function ConsolePrinting() {
   console.log("Message 3");
   console.log("Message 4");
   console.groupEnd();
+
+
+  console.group("Group 1");
+  console.log("Message 1");
+  console.group("Group 2");
+  console.log("Message 3");
+  console.log("Message 4");
+  console.groupEnd();
+  console.groupEnd();
+
+  
 }
 
 ConsolePrinting();
