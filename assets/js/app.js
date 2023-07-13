@@ -97,3 +97,4 @@ function ConsolePrinting() {
 }
 
 ConsolePrinting();
+console.log('are wah ek error aya contact karo asap');
