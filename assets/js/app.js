@@ -18,6 +18,9 @@ function PageTransitions() {
 
   //Sctions Active
   allSections.addEventListener("click", (e) => {
+
+    console.log("a");
+
     const id = e.target.dataset.id;
     if (id) {
       //resmove selected from the other btns
@@ -96,5 +99,81 @@ function ConsolePrinting() {
   
 }
 
-ConsolePrinting();
-console.log('are wah ek error aya contact karo asap');
+// ConsolePrinting();
+// console.log('are wah ek error aya contact karo asap');
+
+
+
+
+
+
+// const sections = document.querySelectorAll(".section");
+// const sectBtns = document.querySelectorAll(".controlls");
+// const sectBtn = document.querySelectorAll(".control");
+// const allSections = document.querySelector(".main-content");
+
+// function PageTransitions() {
+//   // Button click active class
+//   for (let i = 0; i < sectBtn.length; i++) {
+//     sectBtn[i].addEventListener("click", function () {
+//       activateSection(this);
+//     });
+//   }
+
+//   // Sections Active - Click Event
+//   allSections.addEventListener("click", (e) => {
+//     if (e.target.classList.contains("control")) {
+//       activateSection(e.target);
+//     }
+//   });
+
+//   // Sections Active - Enter Key Press
+//   document.addEventListener("keydown", (e) => {
+//     if (e.key === "Enter" && document.activeElement.classList.contains("control")) {
+//       activateSection(document.activeElement);
+//     }
+//   });
+
+//   // Toggle theme
+//   const themeBtn = document.querySelector(".theme-btn");
+//   themeBtn.addEventListener("click", () => {
+//     toggleTheme();
+//   });
+
+//   function activateSection(button) {
+//     const id = button.dataset.id;
+//     if (id) {
+//       // Remove "active" class from other buttons
+//       sectBtns.forEach((btn) => {
+//         btn.classList.remove("active");
+//       });
+//       button.classList.add("active");
+
+//       // Hide other sections
+//       sections.forEach((section) => {
+//         section.classList.remove("active");
+//       });
+
+//       const element = document.getElementById(id);
+//       element.classList.add("active");
+//     }
+//   }
+
+//   function toggleTheme() {
+//     let element = document.body;
+//     element.classList.toggle("light-mode");
+
+//     let faviconDark = "assets/images/favicon-dark.ico";
+//     let faviconLight = "assets/images/favicon-light.ico";
+
+//     let favicon = document.getElementById("favicon").href;
+
+//     if (favicon.includes(faviconDark)) {
+//       document.getElementById("favicon").href = favicon.replace(faviconDark, faviconLight);
+//     } else {
+//       document.getElementById("favicon").href = favicon.replace(faviconLight, faviconDark);
+//     }
+//   }
+// }
+
+// PageTransitions();
